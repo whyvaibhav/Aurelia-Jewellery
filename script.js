@@ -444,7 +444,6 @@ function renderAdmin() {
             <div class="panel stack">
                 <h1 class="serif">Admin Access Required</h1>
                 <p class="muted">You must be signed in as an administrator to manage inventory.</p>
-                <div class="muted small">Demo credentials: <strong>admin@aurelia.in</strong> / <strong>aureliaAdmin123</strong></div>
                 <div class="button-row" style="margin-top:1rem;">
                     <button class="btn btn-primary" type="button" onclick="openAuthModal('login')">Sign In</button>
                 </div>
@@ -461,8 +460,7 @@ function renderAdmin() {
                     <p class="section-copy">Manage your boutique inventory directly in the browser.</p>
                 </div>
                 <div class="inline-row" style="align-items:center;gap:0.75rem;">
-                    <span class="status">LocalStorage inventory</span>
-                    <button class="btn btn-outline" type="button" onclick="resetDemoProducts()">Reset demo data</button>
+                    <span class="status">Live Inventory</span>
                     <button class="btn btn-outline" type="button" onclick="adminLogout()">Sign out</button>
                 </div>
             </div>
@@ -533,15 +531,6 @@ function adminLogout() {
     notify('Signed out');
     renderAdmin();
     updateHeaderState();
-}
-
-function resetDemoProducts() {
-    if (!confirm('Replace current inventory with demo items? This will overwrite local changes.')) return;
-    saveProducts(sampleProducts);
-    renderInventoryTable(sampleProducts);
-    renderFeatured();
-    renderAllProducts();
-    notify('Demo inventory restored');
 }
 
 function renderInventoryTable(products) {
@@ -634,7 +623,7 @@ function ensureAuthModal() {
             <div class="inline-row">
                 <div>
                     <h2 class="serif">Account</h2>
-                    <p class="muted small">Register or sign in using localStorage.</p>
+                    <p class="muted small">Register or sign in to your Aurelia account.</p>
                 </div>
                 <button class="btn btn-outline" type="button" id="auth-close">Close</button>
             </div>
