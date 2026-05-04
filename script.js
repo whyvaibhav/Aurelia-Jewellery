@@ -9,14 +9,14 @@ const STORAGE_KEYS = {
 };
 
 const sampleProducts = [
-    { id: 1, name: "Aurora Diamond Ring", price: 450000, category: "rings", stock: 14, featured: true, image: "images/aurora_diamond_ring.png", description: "A brilliant solitaire diamond ring set in 18k white gold — a signature engagement piece." },
-    { id: 3, name: "Golden Riviera Bracelet", price: 620000, category: "bracelets", stock: 6, featured: true, image: "images/golden_riviera_bracelet.png", description: "A handcrafted link bracelet in 22k yellow gold with fluid, architectural lines." },
-    { id: 4, name: "Pearl Cascade Earrings", price: 145000, category: "earrings", stock: 18, featured: true, image: "images/pearl_cascade_earrings.png", description: "Cultured pearls arranged in a cascading drop design finished with rose gold accents." },
-    { id: 5, name: "Celeste Emerald Ring", price: 390000, category: "rings", stock: 8, featured: false, image: "images/celeste_emerald_ring.png", description: "A vivid emerald cut gem set within a delicate gold frame — ideal for special occasions." },
-    { id: 2, name: "Sapphire Halo Pendant", price: 280000, category: "necklaces", stock: 10, featured: true, image: "images/sapphire_halo_pendant.png", description: "Deep Ceylon sapphire framed by a delicate halo of melee diamonds on a fine chain." },
-    { id: 6, name: "Luna Pearl Necklace", price: 510000, category: "necklaces", stock: 9, featured: true, image: "images/luna_pearl_necklace.png", description: "Signature multi-strand pearls with a handcrafted diamond clasp in 18k gold." },
-    { id: 7, name: "Heritage Cuff Bracelet", price: 330000, category: "bracelets", stock: 12, featured: false, image: "images/heritage_cuff_bracelet.png", description: "A sculptural cuff in vermeil finish inspired by classical motifs." },
-    { id: 8, name: "Diamond Star Earrings", price: 185000, category: "earrings", stock: 11, featured: false, image: "images/diamond_star_earrings.png", description: "Contemporary star-shaped studs set with brilliant diamonds for everyday sparkle." }
+    { id: 1, name: "Aurora Diamond Ring", price: 450000, category: "rings", stock: 14, featured: true, image: "images/aurora_diamond_ring.jpg", description: "A brilliant solitaire diamond ring set in 18k white gold — a signature engagement piece." },
+    { id: 3, name: "Golden Riviera Bracelet", price: 620000, category: "bracelets", stock: 6, featured: true, image: "images/golden_riviera_bracelet.jpg", description: "A handcrafted link bracelet in 22k yellow gold with fluid, architectural lines." },
+    { id: 4, name: "Pearl Cascade Earrings", price: 145000, category: "earrings", stock: 18, featured: true, image: "images/pearl_cascade_earrings.jpg", description: "Cultured pearls arranged in a cascading drop design finished with rose gold accents." },
+    { id: 5, name: "Celeste Emerald Ring", price: 390000, category: "rings", stock: 8, featured: false, image: "images/celeste_emerald_ring.jpg", description: "A vivid emerald cut gem set within a delicate gold frame — ideal for special occasions." },
+    { id: 2, name: "Sapphire Halo Pendant", price: 280000, category: "necklaces", stock: 10, featured: true, image: "images/sapphire_halo_pendant.jpg", description: "Deep Ceylon sapphire framed by a delicate halo of melee diamonds on a fine chain." },
+    { id: 6, name: "Luna Pearl Necklace", price: 510000, category: "necklaces", stock: 9, featured: true, image: "images/luna_pearl_necklace.jpg", description: "Signature multi-strand pearls with a handcrafted diamond clasp in 18k gold." },
+    { id: 7, name: "Heritage Cuff Bracelet", price: 330000, category: "bracelets", stock: 12, featured: false, image: "images/heritage_cuff_bracelet.jpg", description: "A sculptural cuff in vermeil finish inspired by classical motifs." },
+    { id: 8, name: "Diamond Star Earrings", price: 185000, category: "earrings", stock: 11, featured: false, image: "images/diamond_star_earrings.jpg", description: "Contemporary star-shaped studs set with brilliant diamonds for everyday sparkle." }
 ];
 
 let activeAuthTab = "login";

@@ -1,0 +1,17 @@
+{
+  "name": "AURELIA Luxury Jewellery",
+  "short_name": "Aurelia",
+  "description": "Discover luminous rings, necklaces, bracelets, and earrings crafted to feel rare, polished, and unforgettable.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f4efe7",
+  "theme_color": "#d4af37",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    }
+  ]
+}
