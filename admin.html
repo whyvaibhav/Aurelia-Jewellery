@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admin dashboard for AURELIA Luxury Jewellery. Manage inventory, stock, and collections.">
+    <title>Admin Panel | AURELIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand"><img src="images/logo.png" alt="Aurelia Logo" class="brand-logo"></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Collections</a>
+            <a href="admin.html" class="active">Admin</a>
+        </div>
+        <div class="nav-actions">
+            <button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme">☾</button>
+            <button class="icon-button" type="button" data-auth-open="login" data-user-badge>Account</button>
+            <a class="icon-button cart-link" href="cart.html" aria-label="Cart">👜 <span class="badge" data-cart-count>0</span></a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div id="admin-panel"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col"><h3 class="serif">AURELIA</h3><p>Inventory control, editing, and deletion all handled in-browser.</p></div>
+            <div class="footer-col"><h3 class="serif">Management</h3><ul><li>Update products</li><li>Delete products</li><li>Store changes locally</li></ul></div>
+            <div class="footer-col"><h3 class="serif">Demo Access</h3><ul><li>demo@aurelia.com</li><li>Password: aurelia123</li><li>Account modal in navbar</li></ul></div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 Aurelia Luxury. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

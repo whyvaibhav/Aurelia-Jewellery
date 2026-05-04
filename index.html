@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AURELIA Luxury Jewellery. Discover luminous rings, necklaces, bracelets, and earrings crafted to feel rare, polished, and unforgettable.">
+    <title>AURELIA | Luxury Jewellery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand"><img src="images/logo.png" alt="Aurelia Logo" class="brand-logo"></a>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="products.html">Collections</a>
+            <a href="admin.html">Admin</a>
+        </div>
+        <div class="nav-actions">
+            <button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme">☾</button>
+            <button class="icon-button" type="button" data-auth-open="login" data-user-badge>Account</button>
+            <a class="icon-button cart-link" href="cart.html" aria-label="Cart">👜 <span class="badge" data-cart-count>0</span></a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="eyebrow">Luxury jewellery house</div>
+            <h1>Timeless Elegance, Curated for Modern Icons.</h1>
+            <p>Discover luminous rings, necklaces, bracelets, and earrings crafted to feel rare, polished, and unforgettable.</p>
+            <div class="hero-actions">
+                <a href="products.html" class="btn btn-primary">Shop Now</a>
+                <button class="btn btn-outline" type="button" data-scroll-to="#featured">Explore Featured</button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><strong>24K</strong><span>Gold accented styling</span></div>
+                <div class="stat"><strong>4.9/5</strong><span>Client satisfaction</span></div>
+                <div class="stat"><strong>Local</strong><span>Storage powered checkout</span></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" id="featured">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title serif">Featured Pieces</h2>
+                    <p class="section-copy">Handpicked highlights from the current collection.</p>
+                </div>
+                <a class="btn btn-outline" href="products.html">View All Collections</a>
+            </div>
+            <div class="grid" id="featured-grid"></div>
+        </section>
+
+        <section class="section">
+            <div class="feature-row">
+                <div class="feature-pill"><strong>Personal Concierge</strong><span>Simulated login and account flow.</span></div>
+                <div class="feature-pill"><strong>Luxury Presentation</strong><span>Soft shadows, gold accents, elegant spacing.</span></div>
+                <div class="feature-pill"><strong>Fast Preview</strong><span>Cart, checkout, and admin are stored locally.</span></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3 class="serif">AURELIA</h3>
+                <p>Elegance in every detail. Crafted for evenings, milestones, and heirloom moments.</p>
+            </div>
+            <div class="footer-col">
+                <h3 class="serif">Collections</h3>
+                <ul>
+                    <li><a href="products.html">Shop All</a></li>
+                    <li><a href="products.html">Rings</a></li>
+                    <li><a href="products.html">Necklaces</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="serif">Contact</h3>
+                <ul>
+                    <li>concierge@aurelia.com</li>
+                    <li>+1 (800) 123-4567</li>
+                    <li>New York, NY</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 Aurelia Luxury. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your shopping cart at AURELIA. Review your selected luxury rings, necklaces, and bracelets.">
+    <title>Shopping Cart | AURELIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand"><img src="images/logo.png" alt="Aurelia Logo" class="brand-logo"></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Collections</a>
+            <a href="admin.html">Admin</a>
+        </div>
+        <div class="nav-actions">
+            <button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme">☾</button>
+            <button class="icon-button" type="button" data-auth-open="login" data-user-badge>Account</button>
+            <a class="icon-button cart-link active" href="cart.html" aria-label="Cart">👜 <span class="badge" data-cart-count>0</span></a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="section-header">
+                <div>
+                    <h1 class="section-title serif">Your Cart</h1>
+                    <p class="section-copy">Adjust quantities, remove pieces, and continue to checkout.</p>
+                </div>
+                <a class="btn btn-outline" href="products.html">Continue Shopping</a>
+            </div>
+            <div class="checkout-layout">
+                <div class="stack">
+                    <div id="cart-items" class="cart-list"></div>
+                </div>
+                <aside class="checkout-summary stack">
+                    <h2 class="serif">Order Summary</h2>
+                    <div id="cart-summary" class="stack"></div>
+                    <div class="summary-line"><span>Grand Total</span><strong id="cart-total">$0</strong></div>
+                    <button class="btn btn-primary" type="button" onclick="checkout()">Proceed to Checkout</button>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col"><h3 class="serif">AURELIA</h3><p>A concise cart experience that keeps the luxury feel intact.</p></div>
+            <div class="footer-col"><h3 class="serif">Purchase</h3><ul><li><a href="checkout.html">Checkout</a></li><li><a href="products.html">Collections</a></li><li><a href="index.html">Home</a></li></ul></div>
+            <div class="footer-col"><h3 class="serif">Details</h3><ul><li>Stored in localStorage</li><li>Quantity controls</li><li>Responsive summary panel</li></ul></div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 Aurelia Luxury. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop all collections at AURELIA Luxury Jewellery. Browse our handcrafted bracelets, diamond rings, and pearl earrings.">
+    <title>Collections | AURELIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand"><img src="images/logo.png" alt="Aurelia Logo" class="brand-logo"></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html" class="active">Collections</a>
+            <a href="admin.html">Admin</a>
+        </div>
+        <div class="nav-actions">
+            <button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme">☾</button>
+            <button class="icon-button" type="button" data-auth-open="login" data-user-badge>Account</button>
+            <a class="icon-button cart-link" href="cart.html" aria-label="Cart">👜 <span class="badge" data-cart-count>0</span></a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="section-header">
+                <div>
+                    <h1 class="section-title serif">All Collections</h1>
+                    <p class="section-copy">Browse the full assortment with search, category, sort, and price filters.</p>
+                </div>
+            </div>
+            <div class="toolbar panel" style="padding: 1rem; margin-bottom: 1.2rem;">
+                <label class="field"><span>Search</span><input id="product-search" type="search" placeholder="Search jewellery"></label>
+                <label class="field"><span>Category</span>
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="rings">Rings</option>
+                        <option value="necklaces">Necklaces</option>
+                        <option value="bracelets">Bracelets</option>
+                        <option value="earrings">Earrings</option>
+                    </select>
+                </label>
+                <label class="field"><span>Price Ceiling</span><input id="price-filter" type="range" min="1000" max="8000" value="8000"></label>
+                <label class="field"><span>Sort</span>
+                    <select id="sort-filter">
+                        <option value="featured">Featured</option>
+                        <option value="name">Name</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                    </select>
+                </label>
+            </div>
+            <div class="grid" id="products-grid"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col"><h3 class="serif">AURELIA</h3><p>A quiet luxury catalogue with polished finishes and a premium shopping rhythm.</p></div>
+            <div class="footer-col"><h3 class="serif">Explore</h3><ul><li><a href="index.html">Home</a></li><li><a href="checkout.html">Checkout</a></li><li><a href="admin.html">Admin</a></li></ul></div>
+            <div class="footer-col"><h3 class="serif">Services</h3><ul><li>Curated gifting</li><li>Wishlist saving</li><li>Local order storage</li></ul></div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 Aurelia Luxury. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

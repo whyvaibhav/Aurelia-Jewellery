@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Checkout securely at AURELIA Luxury Jewellery. Complete your purchase of our curated collections.">
+    <title>Checkout | AURELIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand"><img src="images/logo.png" alt="Aurelia Logo" class="brand-logo"></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Collections</a>
+            <a href="admin.html">Admin</a>
+        </div>
+        <div class="nav-actions">
+            <button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme">☾</button>
+            <button class="icon-button" type="button" data-auth-open="login" data-user-badge>Account</button>
+            <a class="icon-button cart-link" href="cart.html" aria-label="Cart">👜 <span class="badge" data-cart-count>0</span></a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="section-header">
+                <div>
+                    <h1 class="section-title serif">Checkout</h1>
+                    <p class="section-copy">Complete the form and submit your order. No payment gateway is required.</p>
+                </div>
+            </div>
+            <div id="checkout-success" class="notice" hidden style="margin-bottom: 1rem;"></div>
+            <div class="checkout-layout">
+                <form id="checkout-form" class="checkout-summary stack">
+                    <h2 class="serif">Delivery Details</h2>
+                    <label class="field"><span>Name</span><input type="text" id="checkout-name" required placeholder="Your full name"></label>
+                    <label class="field"><span>Address</span><textarea id="checkout-address" rows="4" required placeholder="Street address, city, postal code"></textarea></label>
+                    <label class="field"><span>Phone</span><input type="tel" id="checkout-phone" required placeholder="Phone number"></label>
+                    <button class="btn btn-primary" type="submit">Place Order</button>
+                </form>
+                <aside class="checkout-summary stack">
+                    <h2 class="serif">Order Summary</h2>
+                    <div id="checkout-summary" class="stack"></div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col"><h3 class="serif">AURELIA</h3><p>A calm checkout flow with a minimal, boutique-inspired structure.</p></div>
+            <div class="footer-col"><h3 class="serif">Need Help?</h3><ul><li>concierge@aurelia.com</li><li>+1 (800) 123-4567</li><li>Support center</li></ul></div>
+            <div class="footer-col"><h3 class="serif">More</h3><ul><li><a href="cart.html">Back to Cart</a></li><li><a href="products.html">Continue Shopping</a></li><li><a href="admin.html">Admin</a></li></ul></div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 Aurelia Luxury. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
